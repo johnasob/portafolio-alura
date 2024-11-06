@@ -23,7 +23,9 @@ a {
     text-decoration: none;
     color: var(--color-de-link);
 }
-
+section{
+    padding: 16px;
+}
 /* ------------------------------ Sección Menú -------------------------------*/
 .cabecera {
     display: flex;
@@ -50,7 +52,10 @@ a {
     font-size: 0.9rem;
 }
 /* ------------------------------ Sección Presentación ------------------------------*/
-
+.redes{
+    display: flex;
+    gap: 8px;
+}
 
 /* ------------------------------ Sección sobre mí ----------------------------------*/
 
