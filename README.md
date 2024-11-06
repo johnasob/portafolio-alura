@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Challenge ONE | Front End -  Portafolio
 
 <p align="center" >
@@ -22,3 +23,7 @@
      <img width="600" heigth="600" src="https://user-images.githubusercontent.com/101413385/169064699-f268715c-822c-4335-b066-97a1bc1ea8e1.png">
 </p>
 
+=======
+# portafolio-alura
+Este es un proyecto enfocado a crear mi primer repositorio, basandome en un maquetado base HTML y orientando su diseño a un prototipo sugerido desde Figma.
+>>>>>>> 67ab69770e602f6fefe2f437b3114d8134a2d8ed
