@@ -4,6 +4,11 @@
     --color-de-fondo: #F5F5F5;
     --color-de-fondo-menu: #ffffff;
     --color-de-link: #000000;
+    --color-de-texto-oscuro:#464646;
+    --color-de-fondo-azul: #EAF2FD;
+    --color-de-texto-claro:#A2A2A2;
+    --color-de-borde-azul:#2A7AE4;
+    --color-de-borde-gris:#C8C8C8;
 }
 
 body {
@@ -11,7 +16,7 @@ body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
     box-sizing: border-box;
-    padding: 0;
+    padding: 0px;
     line-height: 1.6;
 }
 
@@ -29,14 +34,14 @@ section{
 /* ------------------------------ Sección Menú -------------------------------*/
 .cabecera {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    padding: 1rem;
+    justify-content: space-around;
     background-color: var(--color-de-fondo-menu);
 }
 
 .cabecera__logo {
-    max-width: 80px; /* Ajuste para pantallas pequeñas */
+    max-width: 22px; /* Ajuste para pantallas pequeñas */
 }
 
 .cabecera__titulo {
@@ -51,27 +56,216 @@ section{
 .navegacion__elemento a {
     font-size: 0.9rem;
 }
+.navegacion__email{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
 /* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion{
+    padding-top: 16px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.presentacion__foto{
+    width: 98px;
+    height:98px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.presentacion__contenedor{
+    padding:0px ;
+}
+.presentacion__titulo{
+    margin: 0px;
+    font-size: 22px;
+    line-height: 22px;
+}
+.presentacion__titulo,
+.presentacion__subtitulo{
+    text-align: justify;  
+}
+.presentacion__subtitulo{
+    line-height:16px;
+    font-size: 14px;
+}
 .redes{
     display: flex;
+    justify-content: space-between;
     gap: 8px;
+    padding: 0px;
+}
+.redes__img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 /* ------------------------------ Sección sobre mí ----------------------------------*/
+.sobre-mi__titulo{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 22px;
+}
+.sobre-mi__texto{
+    text-align: left;  
+    font-size: 14px;
+    line-height: 16px;
+}
+/*------------------------------ Sección de Habilidades y Aficiones ------------------------------*/
+.habilidades,
+.aficiones{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.habilidades__titulo,
+.aficiones__titulo{
+    justify-content: center;
+    display: flex;
+    margin: 0px;
+}
 
+.habilidades__lista,
+.aficiones__lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-/*------------------------------ Sección de Habilidades ------------------------------*/
-
-
-/*------------------------------ Sección de Aficiones --------------------------------*/
-
-
+.habilidades__elemento,
+.aficiones__elemento {
+    padding: 16px;
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background: var( --color-de-fondo-menu);
+    align-content:space-around;
+}
+.habilidades__icono,
+.aficiones__icono{
+    height: auto;
+    width: 32px;
+    max-height: 37px;
+}
+.habilidades__nombre,
+.aficiones__nombre{
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--color-de-texto-oscuro);
+}
+/*------------------------------ Sección de Formacion--------------------------------*/
+.formacion{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:32px;
+}
+.formacion__titulo{
+    text-align: center;
+}
+.formacion__lista{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;   
+    gap:16px;
+}
+.formacion__elemento{
+    display:flex;
+    flex-direction: column;
+    gap:8px;
+    justify-content: center;
+}
+.formacion__imagen{
+    background: var( --color-de-fondo-menu);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding:32px 0px 32px 0px
+}
+.formacion__icono{
+    width: 84px;
+    height: auto;
+}
+.formacion__descripcion{
+    justify-items: start;
+}
+.formacion__nombre,
+.formacion__detalle{
+    margin: 0px;
+    color: var(--color-de-texto-oscuro);
+}
+.formacion__nombre{
+    font-size: 16px;
+    font-weight: 600;
+}
+.formacion__detalle{
+    font-size: 14px;
+    font-weight: 400;
+}
 /*------------------------------ Sección de Proyectos --------------------------------*/
-
-
+.proyectos{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:32px;
+}
+.proyectos__titulo{
+    text-align: center;
+}
 /*------------------------------ Sección de Contacto ---------------------------------*/
 
+.contacto__campo-container {
+    position: relative;
+    margin-bottom: 20px;
+}
 
+.contacto__campo {
+    background-color: var(--color-de-fondo);
+    padding: 10px 10px 10px 5px;
+    border: 0.5px solid var(--color-de-borde-gris);
+    color: var(--color-de-texto-claro);
+    border-radius: 6px;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    transition: border-bottom 0.3s ease, color 0.3s ease;
+}
+
+.contacto__campo:focus {
+    border-bottom: 3px solid var(--color-de-borde-azul);
+}
+
+.contacto__label {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    font-size: 16px;
+    color: var(--color-de-label);
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+
+.contacto__campo:focus + .contacto__label,
+.contacto__campo:not(:placeholder-shown) + .contacto__label {
+    top: -10px;
+    left: 5px;
+    font-size: 12px;
+    color: var(--color-de-label-activo);
+}
+
+.contacto__campo:hover {
+    border-bottom: 3px solid var(--color-de-borde-azul);
+}
 /* ------------------------------ Responsividad ---------------------------------------*/
 
 /* Tablets y pantallas más grandes */
