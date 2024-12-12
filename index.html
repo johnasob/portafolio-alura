@@ -165,9 +165,11 @@
 
     <!-- Sección de Contacto -->
     <section class="contacto" id="contacto">
-        <h2 class="contacto__titulo">Contacto</h2>
-        <p class="contacto__descripcion">Puedes contactarme a través de este formulario o mis redes sociales.</p>
-        <form class="contacto__formulario">
+        <div class="contacto__cabecera">
+            <h2 class="contacto__titulo">Contacto</h2>
+            <p  class="contacto__descripcion">Puedes contactarme a través de este formulario o mis redes sociales.</p>
+        </div>
+       <form class="contacto__formulario">
             <div class="contacto__campo-container">
                 <input id="nombre" class="contacto__campo" type="text" required>
                 <label for="nombre" class="contacto__label">Nombre</label>
@@ -178,9 +180,13 @@
                 <label for="email" class="contacto__label">Correo Electrónico</label>
             </div>
             <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje"></textarea>
-            <button class="contacto__boton" type="submit">Enviar</button>
+            <button class="contacto__boton" type="submit">Enviar mensaje</button>
         </form>
     </section>
 </body>
+<footer class="footer">
+    <h4 class="footer__descripcion">Desarrollado por John Solano </h4>
+    <h5 class="footer__year">2024</h5>
+</footer>
     <script src="script.js"></script>
 </html>
